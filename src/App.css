@@ -4,20 +4,42 @@
   height: 300vh;
 }
 
-.scrollTextContainer {
-  padding-top: 40vh;
-  padding-left: 10vw;
-  padding-right: 15vw;
+
+.subMain {
+  display: flex;
+  padding-top: 13vh;
+  align-items: center;
+  justify-content: center;
+  gap: 14vw;
+}
+
+.scrollAdvise {
+  font-size: 2vw;
+  transition: ease-in 0.2s;
+  animation-name: blink;
+  animation-duration: 1.5s;
+}
+
+.arrows {
+  transition: ease-in 0.2s;
+  animation-name: blink;
+  animation-duration: 1.5s;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .fox {
-  margin-top: 9vw;
   width: 30vw;
   height: 66vh;
 }
 
 .title {
   font-size: 6vw;
+  font-weight: 800;
   color: white;
   margin-top: 0px;
   opacity: 0.8;
