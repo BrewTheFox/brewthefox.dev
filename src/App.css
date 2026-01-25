@@ -5,6 +5,7 @@
 }
 
 
+
 .subMain {
   display: flex;
   padding-top: 13vh;
@@ -33,12 +34,12 @@
 }
 
 .fox {
-  width: 30vw;
-  height: 66vh;
+  width: 30vmax;
+  height: 66vmin;
 }
 
 .title {
-  font-size: 6vw;
+  font-size: 6vmax;
   font-weight: 800;
   color: white;
   margin-top: 0px;
