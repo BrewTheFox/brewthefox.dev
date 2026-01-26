@@ -4,8 +4,6 @@
   height: 300vh;
 }
 
-
-
 .subMain {
   display: flex;
   padding-top: 13vh;
@@ -36,6 +34,16 @@
 .fox {
   width: 30vmax;
   height: 66vmin;
+}
+
+.socialButton {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.socialButton svg {
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .title {
