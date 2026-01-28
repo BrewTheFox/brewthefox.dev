@@ -1,0 +1,38 @@
+[
+  {
+    "title": "ReKittyPaw",
+    "description": "Highly configurable anarchy minecraft item delivery bot with a complete discord integration.",
+    "githubLink": "https://github.com/BrewTheFox/ReKITtyPaw"
+  },
+  {
+    "title": "ASW Lynx",
+    "description": "My first attempt to build a public website, made when I was 15 years old, meant to be secure, using a FastAPI backend.",
+    "website": "https://aswlynx.brewthefox.dev"
+  },
+  {
+    "title": "Youtube Patcher",
+    "description": "Data patcher for Youtube Playables made in React JS and Python. (CURL parser)",
+    "website": "https://patcher.brewthefox.dev",
+    "githubLink":"https://github.com/BrewTheFox/PlayablesHack"
+  },
+  {
+    "title": "EyeSystem-Core",
+    "description": "Rewrite of EyeSystem by Animador-BJ, with an updated NiceGUI look and a public Web Interface, made to demonstrate to a friend that he could probably win a coding contest.",
+    "githubLink": "https://github.com/BrewTheFox/EyeSystem-Core"
+  },
+  {
+    "title": "BeatSaber-RegionalBot",
+    "description": "Regional discord bot for tracking Beat Saber player's scores, with additional competitivity functions and multisocket compatibility and synchronization.",
+    "githubLink": "https://github.com/BrewTheFox/BeatSaber-RegionalBot"
+  },
+  {
+    "title":"QuestSystemAlertDisabler",
+    "description":"Electron app to disable Meta Quest's system alerts (may damage your device in case of real hardware damage).",
+    "githubLink":"https://github.com/BrewTheFox/QuestSystemAlertDisabler"
+  },
+  {
+    "title": "data_to_avi",
+    "description": "Rust CLI tool to convert any kind of file into a dot AVI file for online storage.",
+    "githubLink":"https://github.com/BrewTheFox/data_to_avi"
+  }
+]
