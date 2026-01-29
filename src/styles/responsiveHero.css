@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.heroMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    padding: 0 5vw;
+    gap: 3vh;
+}
+
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+
+.heroTitle {
+    font-size: clamp(2.5rem, 12vw, 6rem);
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    opacity: 0.9;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroTitle::selection {
+    color: #71FFEA;
+    background-color: #13020F;
+}
+
+.heroFox {
+    width: clamp(150px, 45vw, 300px);
+    height: auto;
+}
+
+.heroSubtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.heroSubtitle h2 {
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
+    font-family: "Space Mono", monospace;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.heroSubtitle::selection {
+    color: #71FFEA;
+    background-color: #13020F;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.socialButton {
+    width: clamp(40px, 10vw, 60px);
+    height: clamp(40px, 10vw, 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.socialButton:hover {
+    transform: scale(1.1);
+}
+
+.socialButton svg {
+    width: clamp(24px, 6vw, 40px);
+    height: clamp(24px, 6vw, 40px);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.scrollAdvise {
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    color: white;
+    opacity: 0.7;
+    animation: blink2 1.5s infinite;
+}
+
+.arrows {
+    animation: blink2 1.5s infinite;
+    color: white;
+}
+
+@keyframes blink2 {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 0.3; }
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.float-1 { animation: float1 3s ease-in-out infinite; }
+.float-2 { animation: float2 4s ease-in-out infinite 0.5s; }
+.float-3 { animation: float1 3.5s ease-in-out infinite 1s; }
+.float-4 { animation: float2 4.5s ease-in-out infinite 1.5s; }
+
+@media (min-width: 768px) {
+    .heroContent {
+        flex-direction: row;
+        gap: 8vw;
+        text-align: left;
+    }
+    
+    .heroText {
+        align-items: flex-start;
+    }
+    
+    .heroSubtitle {
+        justify-content: flex-start;
+    }
+    
+    .socialLinks {
+        justify-content: flex-start;
+    }
+    
+    .heroFox {
+        width: clamp(200px, 25vw, 400px);
+    }
+    
+    .heroTitle {
+        font-size: clamp(3rem, 6vw, 5rem);
+    }
+    
+    .heroSubtitle h2 {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+    
+    .socialButton {
+        width: clamp(40px, 4vw, 50px);
+        height: clamp(40px, 4vw, 50px);
+    }
+    
+    .socialButton svg {
+        width: clamp(24px, 2.5vw, 32px);
+        height: clamp(24px, 2.5vw, 32px);
+    }
+}

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import Starfield from './starfield';
+import '../styles/desktopHero.css'
 import { Button } from './ui/button';
 import Fox from '../assets/Fox.svg?react'
 import { motion, useMotionValueEvent, useScroll, useTransform } from "motion/react"
@@ -104,42 +105,42 @@ export default function Hero() {
             <Fox id="fox-svg" className='fox fill-white' style={{ transition: 'transform 0.1s ease-out' }}></Fox>
 
             <motion.div
-              className="float-1"
+              className="pcFloat-1"
               style={{ position: 'absolute', top: '20%', left: '-10%', opacity: firstItemOpacity }}
             >
               <a href='https://github.com/BrewTheFox'>
-                <Button className="socialButton" variant='ghost'>
+                <Button className="pcSocialButton" variant='ghost'>
                   <SiGithub />
                 </Button>
               </a>
             </motion.div>
 
             <motion.div
-              className="float-2"
+              className="pcFloat-2"
               style={{ position: 'absolute', top: '10%', right: '-10%', opacity: secondItemOpacity }}
             >
-              <Button className="socialButton" variant='ghost'>
+              <Button className="pcSocialButton" variant='ghost'>
                 <Mail />
               </Button>
             </motion.div>
 
             <motion.div
-              className="float-3"
+              className="pcFloat-3"
               style={{ position: 'absolute', bottom: '30%', left: '-15%', opacity: secondItemOpacity }}
             >
               <a href='https://discord.com/users/383044282669465622'>
-                <Button className="socialButton" variant='ghost'>
+                <Button className="pcSocialButton" variant='ghost'>
                   <SiDiscord />
                 </Button>
               </a>
             </motion.div>
 
             <motion.div
-              className="float-4"
+              className="pcFloat-4"
               style={{ position: 'absolute', bottom: '25%', right: '-15%', opacity: firstItemOpacity }}
             >
               <a href='https://www.youtube.com/@BrewTheFox'>
-                <Button className="socialButton" variant='ghost'>
+                <Button className="pcSocialButton" variant='ghost'>
                   <SiYoutube />
                 </Button>
               </a>
@@ -148,9 +149,9 @@ export default function Hero() {
         </div>
         <div>
           <div style={{ display: 'flex', justifyContent: 'center', justifyItems: 'center' }}>
-            <ArrowDown size='3vw' className='arrows' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }} ></ArrowDown>
-            <span className='scrollAdvise' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }}>Scroll to know more</span>
-            <ArrowDown size='3vw' className='arrows' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }}></ArrowDown>
+            <ArrowDown size='3vw' className='pcArrows' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }} ></ArrowDown>
+            <span className='scrollAdvisePC' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }}>Scroll to know more</span>
+            <ArrowDown size='3vw' className='pcArrows' style={{ animationIterationCount: animationIterations, opacity: scrollAdviseOpacity }}></ArrowDown>
           </div>
         </div>
       </div>

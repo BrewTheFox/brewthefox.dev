@@ -1,6 +1,8 @@
 "use client"
 
-import './App.css'
+import { useState, useEffect } from 'react'
+
+import './styles/App.css'
 import projects from './data/projects.json'
 import {EthernetPort} from 'lucide-react';
 import {SiGithub} from '@icons-pack/react-simple-icons';
@@ -9,11 +11,24 @@ import { Button } from './components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel';
 import { Card, CardContent } from './components/ui/card';
 import Hero from './components/hero';
+import ResponsiveHero from './components/responsiveHero';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <ReactLenis root>
-      <Hero />
+      {isMobile ? <ResponsiveHero /> : <Hero />}
       <div style={{
         backgroundColor: '#0f0f0f',
         padding: '4rem 0',
