@@ -61,7 +61,7 @@ function App() {
                         <span>
                           {item["description"]}
                         </span>
-                        <div className='gap-1 w-full flex'>
+                        <div className='gap-1 w-full flex' style={{ marginTop: 'auto' }}>
                           {item["githubLink"] && (
                             <a className='flex-1' href={item['githubLink']}>
                               <Button className='w-full'>
