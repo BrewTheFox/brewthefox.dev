@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Tysm https://medium.com/designly/how-to-create-an-animated-space-stars-background-effect-in-react-next-js-2806b630379c!!
 
@@ -11,7 +11,7 @@ interface Props {
 	starCount?: number;
 }
 
-export default function Starfield(props: Props) {
+const Starfield = React.memo(function Starfield(props: Props) {
 	const { speedFactor = 0.05, backgroundColor = 'black', starColor = [255, 255, 255], starCount = 5000 } = props;
 
 	useEffect(() => {
@@ -148,4 +148,6 @@ export default function Starfield(props: Props) {
 			}}
 		></canvas>
 	);
-}
+});
+
+export default Starfield;

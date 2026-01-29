@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.scrollContainer {
+  height: 300vh;
+}
+
+.subMain {
+  display: flex;
+  padding-top: 13vh;
+  align-items: center;
+  justify-content: center;
+  gap: 14vw;
+}
+
+.scrollAdvisePC {
+  font-size: 2vw;
+  transition: ease-in 0.2s;
+  animation-name: blinkPC;
+  animation-duration: 1.5s;
+}
+
+.fox {
+  width: 30vmax;
+  height: 66vmin;
+}
+
+.pcSocialButton {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.pcSocialButton svg {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+@keyframes pcFloat1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes pcFloat2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pcFloat3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pcFloat4 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+.pcFloat-1 { animation: pcFloat1 3s ease-in-out infinite; }
+.pcFloat-2 { animation: pcFloat2 4s ease-in-out infinite 1s; }
+.pcFloat-3 { animation: pcFloat3 3.5s ease-in-out infinite 0.5s; }
+.pcFloat-4 { animation: pcFloat4 4.5s ease-in-out infinite 1.5s; }
+
+.pcArrows {
+  animation-name: blinkPC;
+  animation-duration: 1.5s;
+  color: white;
+}
+
+@keyframes blinkPC {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.title {
+  font-size: 6vmax;
+  font-weight: 800;
+  color: white;
+  margin-top: 0px;
+  opacity: 0.8;
+}
+
+.title::selection {
+  color: #71FFEA;
+  background-color: #13020F;
+}
+
+.subtitle {
+  font-size: 2vw;
+  font-family: "Space Mono", monospace;
+  color: white;
+  opacity: 0.7;
+  padding-top: 3vh;
+}
+
+.subtitle::selection {
+  color: #71FFEA;
+  background-color: #13020F;
+}
