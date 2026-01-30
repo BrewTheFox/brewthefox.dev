@@ -26,7 +26,7 @@ export default function ResponsiveHero() {
                     </div>
                     
                     <div className='socialLinks'>
-                        <a href='https://github.com/BrewTheFox' className='float-1'>
+                        <a href='https://github.com/BrewTheFox' rel="noopener noreferrer" className='float-1'>
                             <Button className="socialButton" variant='ghost'>
                                 <SiGithub />
                             </Button>
@@ -36,12 +36,12 @@ export default function ResponsiveHero() {
                                 <Mail />
                             </Button>
                         </a>
-                        <a href='https://discord.com/users/383044282669465622' className='float-3'>
+                        <a href='https://discord.com/users/383044282669465622' rel="noopener noreferrer" className='float-3'>
                             <Button className="socialButton" variant='ghost'>
                                 <SiDiscord />
                             </Button>
                         </a>
-                        <a href='https://www.youtube.com/@BrewTheFox' className='float-4'>
+                        <a href='https://www.youtube.com/@BrewTheFox' rel="noopener noreferrer" className='float-4'>
                             <Button className="socialButton" variant='ghost'>
                                 <SiYoutube />
                             </Button>
