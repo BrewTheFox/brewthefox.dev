@@ -108,7 +108,7 @@ export default function Hero() {
               className="pcFloat-1"
               style={{ position: 'absolute', top: '20%', left: '-10%', opacity: firstItemOpacity }}
             >
-              <a href='https://github.com/BrewTheFox' rel="noopener noreferrer">
+              <a href='https://github.com/BrewTheFox' rel="noopener noreferrer" target='_blank'>
                 <Button className="pcSocialButton" variant='ghost'>
                   <SiGithub />
                 </Button>
@@ -128,7 +128,7 @@ export default function Hero() {
               className="pcFloat-3"
               style={{ position: 'absolute', bottom: '30%', left: '-15%', opacity: secondItemOpacity }}
             >
-              <a href='https://discord.com/users/383044282669465622' rel="noopener noreferrer">
+              <a href='https://discord.com/users/383044282669465622' rel="noopener noreferrer" target='_blank'>
                 <Button className="pcSocialButton" variant='ghost'>
                   <SiDiscord />
                 </Button>
@@ -139,7 +139,7 @@ export default function Hero() {
               className="pcFloat-4"
               style={{ position: 'absolute', bottom: '25%', right: '-15%', opacity: firstItemOpacity }}
             >
-              <a href='https://www.youtube.com/@BrewTheFox' rel="noopener noreferrer">
+              <a href='https://www.youtube.com/@BrewTheFox' rel="noopener noreferrer" target='_blank'>
                 <Button className="pcSocialButton" variant='ghost'>
                   <SiYoutube />
                 </Button>

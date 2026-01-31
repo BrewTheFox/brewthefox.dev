@@ -63,7 +63,7 @@ function App() {
                         </span>
                         <div className='gap-1 w-full flex' style={{ marginTop: 'auto' }}>
                           {item["githubLink"] && (
-                            <a className='flex-1' href={item['githubLink']} rel="noopener noreferrer">
+                            <a className='flex-1' href={item['githubLink']} rel="noopener noreferrer" target='_blank'>
                               <Button className='w-full'>
                                 Github
                                 <SiGithub/>
@@ -72,7 +72,7 @@ function App() {
                           )
                         }
                         {item['website'] && (
-                            <a className='flex-1' href={item['website']} rel="noopener noreferrer">
+                            <a className='flex-1' href={item['website']} rel="noopener noreferrer" target='_blank'>
                               <Button className='w-full'>
                                 Website
                                 <EthernetPort/>

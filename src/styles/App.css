@@ -10,6 +10,15 @@
   100% {opacity: 1;}
 }
 
+a {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor:grab;
+}
+
 .stickyScroll {
   background-color: #0f0f0f;
   top: 0;
