@@ -4,15 +4,15 @@ import { useState, useEffect } from 'react'
 
 import './styles/App.css'
 import projects from './data/projects.json'
-import {EthernetPort} from 'lucide-react';
 import {SiGithub} from '@icons-pack/react-simple-icons';
+import { ArrowUpRight } from 'lucide-react';
 import { ReactLenis } from 'lenis/react'
 import { Button } from './components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel';
-import { Card, CardContent } from './components/ui/card';
 import Hero from './components/hero';
 import ResponsiveHero from './components/responsiveHero';
 import { Separator } from './components/ui/separator';
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,7 +28,7 @@ function App() {
   return (
     <ReactLenis root>
       {isMobile ? <ResponsiveHero /> : <Hero />}
-      <div style={{
+      <div className='ProjectContainer' style={{
         backgroundColor: '#0f0f0f',
         padding: '4rem 0',
         minHeight: '100vh'
@@ -50,20 +50,20 @@ function App() {
               {projects.map((item, _) => 
                 <CarouselItem key={item["title"].replaceAll(" ", "-")} className="md:basis-1/2 lg:basis-1/3">
                   <div style={{ padding: '0.5rem' }}>
-                    <Card style={{ backgroundColor: '#1a1a1a', border: '1px solid #333' }}>
-                      <CardContent className="aspect-square" style={{display:'flex', flexDirection:'column'}}>
-                        <div className='justify-center text-center w-full'>
-                          <span style={{ color: 'white', fontSize: '1.4rem', fontWeight: 600 }}>
-                            {item["title"]}
-                          </span>
-                        </div>
-                        <Separator></Separator>
-                        <span>
+                    <CardSpotlight radius={340} color={item["color"]} className='projectCard'>
+                      <div className="aspect-square z-20" style={{display:'flex', flexDirection:'column'}}>
+                          <div className='z-20 mb-2 justify-center text-center w-full'>
+                            <span style={{ color: 'white', fontSize: '1.4rem', fontWeight: 600 }}>
+                              {item["title"]}
+                            </span>
+                          </div>
+                        <Separator className='mb-3 z-20'></Separator>
+                        <span className='z-20' style={{color: 'white', fontSize: '1.1rem'}}>
                           {item["description"]}
                         </span>
-                        <div className='gap-1 w-full flex' style={{ marginTop: 'auto' }}>
+                        <div className='z-20 gap-1 w-full flex' style={{ marginTop: 'auto' }}>
                           {item["githubLink"] && (
-                            <a className='flex-1' href={item['githubLink']} rel="noopener noreferrer" target='_blank'>
+                            <a className='flex-5' href={item['githubLink']} rel="noopener noreferrer" target='_blank'>
                               <Button className='w-full'>
                                 Github
                                 <SiGithub/>
@@ -74,15 +74,14 @@ function App() {
                         {item['website'] && (
                             <a className='flex-1' href={item['website']} rel="noopener noreferrer" target='_blank'>
                               <Button className='w-full'>
-                                Website
-                                <EthernetPort/>
+                                <ArrowUpRight/>
                               </Button>
                             </a>
                           )
                         }
                         </div>
-                      </CardContent>
-                    </Card>
+                      </div>
+                    </CardSpotlight>
                   </div>
                 </CarouselItem>
               )}
