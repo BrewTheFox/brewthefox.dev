@@ -12,6 +12,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardContent } from './components/ui/card';
 import Hero from './components/hero';
 import ResponsiveHero from './components/responsiveHero';
+import { Separator } from './components/ui/separator';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,8 +23,6 @@ function App() {
     };
     
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
@@ -58,6 +57,7 @@ function App() {
                             {item["title"]}
                           </span>
                         </div>
+                        <Separator></Separator>
                         <span>
                           {item["description"]}
                         </span>
