@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useTotalPageVh = () => {
-  const [totalVh, setTotalVh] = useState(0);
+  const [totalVh, setTotalVh] = useState(450);
 
   useEffect(() => {
     const calculateVh = () => {
