@@ -34,9 +34,9 @@ a {
   color: #fff;
 }
 
-.projectCard button:hover, .projectCard a:hover {
+.projectCard button:hover {
   border-color: #fff;
-  background-color: #27272a;
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
 button {
