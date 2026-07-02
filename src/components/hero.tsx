@@ -14,7 +14,7 @@ const STAR_COLOR: [number, number, number] = [255, 255, 255];
 const QUOTE = ["I'm a backend developer!", "24vw"];
 
 export default function Hero() {
-  const websiteSizeInVh = useTotalPageVh();
+  const websiteSizeInVh:number = useTotalPageVh();
   const localDotSix = (300 / websiteSizeInVh) * 0.6;
   const localDotFive = (300 / websiteSizeInVh) * 0.5;
   const localDotFour = (300 / websiteSizeInVh) * 0.4;

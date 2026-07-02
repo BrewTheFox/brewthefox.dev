@@ -7,6 +7,7 @@ import { ReactLenis } from 'lenis/react'
 import Hero from './components/hero';
 import ResponsiveHero from './components/responsiveHero';
 import MyProjects from './components/projects';
+import Reports from './components/reports';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,6 +29,7 @@ function App() {
       }}>
         <MyProjects/>
       </div>
+      <Reports/>
     </ReactLenis>
   )
 }

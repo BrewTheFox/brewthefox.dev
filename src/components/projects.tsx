@@ -7,7 +7,6 @@ import { Separator } from './ui/separator';
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import BlurText from './ui/BlurText';
 
-
 export default function MyProjects() {
     return (
         <div style={{
@@ -34,6 +33,14 @@ export default function MyProjects() {
                         <span className='z-20' style={{color: 'white', fontSize: '1.1rem'}}>
                           {item["description"]}
                         </span>
+                        <Separator className='mb-3 mt-3 z-20'></Separator>
+                        <div className='tagList'>
+                          {item["tags"].map((tag, _) => 
+                          <div className='tag'>
+                            <span className='ml-1 mr-1 mt-1 mb-1 text-white-400'>{tag}</span>
+                          </div>
+                          )}
+                        </div>
                         <div className='z-20 gap-1 w-full flex' style={{ marginTop: 'auto' }}>
                           {item["githubLink"] && (
                             <a className='flex-5' href={item['githubLink']} rel="noopener noreferrer" target='_blank'>
