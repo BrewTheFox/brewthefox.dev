@@ -7,7 +7,7 @@ import { ReactLenis } from 'lenis/react'
 import Hero from './components/hero';
 import ResponsiveHero from './components/responsiveHero';
 import MyProjects from './components/projects';
-import Reports from './components/reports';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +29,8 @@ function App() {
       }}>
         <MyProjects/>
       </div>
-      <Reports/>
+
+      <ToastContainer theme='dark'/>
     </ReactLenis>
   )
 }

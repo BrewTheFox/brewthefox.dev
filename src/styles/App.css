@@ -34,11 +34,17 @@ a {
   color: #fff;
 }
 
+.vulnCard button {
+  background: transparent;
+  border: 1px solid #52525b;
+  color: #fff;
+}
+
 .projectCard:hover span {
   text-shadow: 2px 2px 2px black;
 } 
 
-.ProjectText {
+.sectionText {
   color: white;
   font-size: 3rem;
   font-weight: 700;
@@ -84,4 +90,24 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+.carouselContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.vulnCard {
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  background-color: #0f0f0fea;
+}
+
+@media screen and (max-width: 767px){
+  .carouselContainer {
+    max-width: 95%;
+    padding: 0 2.7rem;
+  }
 }

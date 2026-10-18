@@ -1,9 +1,10 @@
-import Starfield from './starfield';
+import Starfield from './ui/starfield';
 import '../styles/responsiveHero.css'
 import Fox from '../assets/Fox.svg?react'
 import { Button } from './ui/button';
 import { Sparkle, Mail, ArrowDown } from 'lucide-react';
 import { SiYoutube, SiGithub, SiDiscord } from '@icons-pack/react-simple-icons';
+
 
 export default function ResponsiveHero() {
     return (

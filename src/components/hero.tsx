@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import Starfield from './starfield';
+import Starfield from './ui/starfield';
 import '../styles/desktopHero.css'
 import { Button } from './ui/button';
 import Fox from '../assets/Fox.svg?react'
@@ -8,10 +8,11 @@ import { Sparkle, ArrowDown, Mail } from 'lucide-react';
 import { SiYoutube, SiGithub, SiDiscord } from '@icons-pack/react-simple-icons';
 import { useTotalPageVh } from '../hooks/useTotalPageVh';
 
+
 type Animation = 'infinite' | 0
 
 const STAR_COLOR: [number, number, number] = [255, 255, 255];
-const QUOTE = ["I'm a backend developer!", "24vw"];
+const QUOTE = ["Paws at you :3", "28vw"];
 
 export default function Hero() {
   const websiteSizeInVh:number = useTotalPageVh();

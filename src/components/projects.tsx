@@ -9,17 +9,13 @@ import BlurText from './ui/BlurText';
 
 export default function MyProjects() {
     return (
-        <div style={{
-          maxWidth: '80%',
-          margin: '0 auto',
-          padding: '0 3rem'
-        }}>
+        <div className='carouselContainer'>
           <div id='projects' style={{justifyContent:'center', display:'flex'}}>
-            <BlurText text='My Projects' className = 'ProjectText'></BlurText>
+            <BlurText text='Projects' className = 'sectionText'></BlurText>
           </div>
           <Carousel className="w-full" opts={{ align: 'start', loop: true }}>
             <CarouselContent>
-              {projects.map((item, _) => 
+              {projects.map((item) => 
                 <CarouselItem key={item["title"].replaceAll(" ", "-")} className="md:basis-1/2 lg:basis-1/3">
                   <div style={{ padding: '0.5rem' }}>
                     <CardSpotlight radius={340} color={item["color"]} className='projectCard'>
@@ -35,8 +31,8 @@ export default function MyProjects() {
                         </span>
                         <Separator className='mb-3 mt-3 z-20'></Separator>
                         <div className='tagList'>
-                          {item["tags"].map((tag, _) => 
-                          <div className='tag'>
+                          {item["tags"].map((tag) => 
+                          <div className='tag' key={tag}>
                             <span className='ml-1 mr-1 mt-1 mb-1 text-white-400'>{tag}</span>
                           </div>
                           )}
